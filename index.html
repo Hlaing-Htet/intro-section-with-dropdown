@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title>Intro section with dropdown navigation</title>
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container mb-0 mb-md-5">
+        <a class="navbar-brand" href="#">
+          <img src="./images/logo.svg" height="30" alt="" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="featureMenu"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Features
+                  <img
+                    src="./images/icon-arrow-down.svg"
+                    id="featureicon"
+                    alt=""
+                  />
+                </a>
+                <ul
+                  class="dropdown-menu border-0 shadow"
+                  aria-labelledby="featureMenu"
+                >
+                  <li>
+                    <a class="dropdown-item m-2" href="#">
+                      <img
+                        src="./images/icon-todo.svg"
+                        alt=""
+                        class="me-3"
+                      /><span class="dropdown-text-color">Todo List</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item m-2" href="#">
+                      <img
+                        src="./images/icon-calendar.svg"
+                        alt=""
+                        class="me-3"
+                      /><span class="dropdown-text-color">Calendar</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item m-2" href="#">
+                      <img
+                        src="./images/icon-reminders.svg"
+                        alt=""
+                        class="me-3"
+                      /><span class="dropdown-text-color">Reminders</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item m-2" href="#">
+                      <img
+                        src="./images/icon-planning.svg"
+                        alt=""
+                        class="me-3"
+                      /><span class="dropdown-text-color">Todo List</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="companyMenu"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Company
+                  <img
+                    src="./images/icon-arrow-down.svg"
+                    id="companyicon"
+                    alt=""
+                  />
+                </a>
+                <ul
+                  class="dropdown-menu border-0 shadow"
+                  aria-labelledby="companyMenu"
+                >
+                  <li>
+                    <a class="dropdown-item dropdown-text-color" href="#"
+                      >History</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item dropdown-text-color" href="#"
+                      >Our Team</a
+                    >
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item dropdown-text-color" href="#"
+                      >Blog</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Careers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+            </ul>
+            <div class="d-flex flex-column flex-lg-row">
+              <a href="#" class="btn border-0 me-3">Login</a>
+              <a href="#" class="btn border border-3"> Register </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container mt-lg-5">
+      <div class="row justify-content-center align-items-end">
+        <div class="col-lg-6 col-xl-4 d-lg-none mb-5">
+          <img src="./images/image-hero-mobile.png" class="w-100" alt="" />
+        </div>
+        <div class="col-lg-6 col-xl-6">
+          <div class="text-center text-lg-start">
+            <h1 class="display-1 big-font fw-bold text-black mt-2 mt-lg-0 mb-4">
+              <div class="d-inline-block d-lg-block">Make</div>
+              <div class="d-inline-block d-lg-block">remote work</div>
+            </h1>
+
+            <p class="mb-5 w-75 text-center text-lg-start mx-auto mx-lg-0">
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
+
+            <a href="#" class="btn btn-primary mb-5">Learn more</a>
+
+            <div class="mt-lg-3 mt-xl-5">
+              <img
+                src="./images/client-databiz.svg"
+                class="logo-img me-4"
+                alt=""
+              />
+              <img
+                src="./images/client-audiophile.svg"
+                class="logo-img me-4"
+                alt=""
+              />
+              <img
+                src="./images/client-meet.svg"
+                class="logo-img me-4"
+                alt=""
+              />
+              <img
+                src="./images/client-maker.svg"
+                class="logo-img me-4"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-xl-4 d-lg-block d-none">
+          <img src="./images/image-hero-desktop.png" class="w-100" alt="" />
+        </div>
+      </div>
+    </div>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const featureMenu = document.getElementById("featureMenu");
+      const companyMenu = document.getElementById("companyMenu");
+      const featureicon = document.getElementById("featureicon");
+      const companyicon = document.getElementById("companyicon");
+
+      const clickFun = (menu, icon) => {
+        menu.addEventListener("click", () => {
+          if (menu.classList.contains("click")) {
+            icon.src = "./images/icon-arrow-down.svg";
+            menu.classList.remove("click");
+          } else {
+            icon.src = "./images/icon-arrow-up.svg";
+            menu.classList.add("click");
+          }
+        });
+      };
+      clickFun(featureMenu, featureicon);
+      clickFun(companyMenu, companyicon);
+    </script>
+  </body>
+</html>
